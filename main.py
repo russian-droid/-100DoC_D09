@@ -1,3 +1,5 @@
+#following Udemy course: 100 days of code by Angela Yu
+
 #-----------------------change score to grade in dict
 student_scores = {
   "Harry": 81,
