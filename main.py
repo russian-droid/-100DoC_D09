@@ -27,6 +27,34 @@ for student in student_scores:
 print(student_grades)
 
 
-#-----------------------
+#-----------------------travel log
+#Nesting Dictionaries in Lists: a list of dict [ {},{},{} ]
+travel_log = [
+{
+  "country": "France",
+  "visits": 12,
+  "cities": ["Paris", "Lille", "Dijon"]
+},
+{
+  "country": "Germany",
+  "visits": 5,
+  "cities": ["Berlin", "Hamburg", "Stuttgart"]
+},
+]
 
+def add_new_country(country, visits, cities):
+    #create a new dict which we'll add to the list of dict later    
+    new_country={}
+    #add each element into the new dict
+    new_country['country']=country
+    new_country['visits']=visits
+    new_country['cities']=cities
+    #now we add the dict into the list of dict
+    travel_log.append(new_country)
+
+add_new_country("Russia", 2, ["Moscow", "Saint Petersburg"])
+print(travel_log)
+
+
+#-----------------------
 #silent action
